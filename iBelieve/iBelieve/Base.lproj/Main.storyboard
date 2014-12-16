@@ -17,9 +17,30 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="zbA-Z9-Yfa" kind="show" id="t5A-wQ-6qH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="213" y="540"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="S1g-Kj-CSS">
+            <objects>
+                <viewController id="zbA-Z9-Yfa" customClass="MainPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5xU-hL-ACo"/>
+                        <viewControllerLayoutGuide type="bottom" id="i4z-dS-4KV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uAD-lu-Kdn">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIr-jv-mU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="540"/>
         </scene>
     </scenes>
 </document>
