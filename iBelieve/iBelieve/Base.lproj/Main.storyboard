@@ -18,7 +18,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="zbA-Z9-Yfa" kind="show" id="t5A-wQ-6qH"/>
+                        <segue destination="zbA-Z9-Yfa" kind="show" identifier="FromAuthToMainPage" id="t5A-wQ-6qH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -38,7 +38,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="zbA-Z9-Yfa" kind="show" id="R1X-b8-Y7e"/>
+                        <segue destination="zbA-Z9-Yfa" kind="show" identifier="FromRegistrationToMainPage" id="R1X-b8-Y7e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22P-DL-xnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
