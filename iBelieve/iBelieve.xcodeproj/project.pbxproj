@@ -17,6 +17,7 @@
 		3D5A9A531A40402300941D79 /* iBelieveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A521A40402300941D79 /* iBelieveTests.m */; };
 		3D5A9A5E1A4043DB00941D79 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */; };
 		3D5A9A611A4044CA00941D79 /* RigistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */; };
+		3D5A9A641A40462600941D79 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A631A40462600941D79 /* StartPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
 		3D5A9A5F1A4044CA00941D79 /* RigistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigistrationViewController.h; sourceTree = "<group>"; };
 		3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigistrationViewController.m; sourceTree = "<group>"; };
+		3D5A9A621A40462600941D79 /* StartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
+		3D5A9A631A40462600941D79 /* StartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				3D5A9A3D1A40402300941D79 /* AuthViewController.h */,
 				3D5A9A3E1A40402300941D79 /* AuthViewController.m */,
 				3D5A9A401A40402300941D79 /* Main.storyboard */,
+				3D5A9A621A40462600941D79 /* StartPageViewController.h */,
+				3D5A9A631A40462600941D79 /* StartPageViewController.m */,
 				3D5A9A5F1A4044CA00941D79 /* RigistrationViewController.h */,
 				3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */,
 				3D5A9A5C1A4043DB00941D79 /* MainPageViewController.h */,
@@ -239,6 +244,7 @@
 				3D5A9A3F1A40402300941D79 /* AuthViewController.m in Sources */,
 				3D5A9A3C1A40402300941D79 /* iBelieve.xcdatamodeld in Sources */,
 				3D5A9A611A4044CA00941D79 /* RigistrationViewController.m in Sources */,
+				3D5A9A641A40462600941D79 /* StartPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
