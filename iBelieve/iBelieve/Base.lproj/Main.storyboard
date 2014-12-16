@@ -23,7 +23,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="540"/>
+            <point key="canvasLocation" x="271.5" y="391.5"/>
+        </scene>
+        <!--Rigistration View Controller-->
+        <scene sceneID="kqs-uE-r5J">
+            <objects>
+                <viewController id="4Z8-bx-uT4" customClass="RigistrationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MyX-rn-Nzc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZEX-Ea-gIy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hIT-ah-kdO">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="zbA-Z9-Yfa" kind="show" id="R1X-b8-Y7e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22P-DL-xnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="1068.75"/>
         </scene>
         <!--Main Page View Controller-->
         <scene sceneID="S1g-Kj-CSS">
@@ -40,7 +60,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIr-jv-mU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="540"/>
+            <point key="canvasLocation" x="1305" y="708"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="R1X-b8-Y7e"/>
+    </inferredMetricsTieBreakers>
 </document>
