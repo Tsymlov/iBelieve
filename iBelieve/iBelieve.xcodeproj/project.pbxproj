@@ -10,7 +10,7 @@
 		3D5A9A361A40402200941D79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A351A40402200941D79 /* main.m */; };
 		3D5A9A391A40402300941D79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A381A40402300941D79 /* AppDelegate.m */; };
 		3D5A9A3C1A40402300941D79 /* iBelieve.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A3A1A40402300941D79 /* iBelieve.xcdatamodeld */; };
-		3D5A9A3F1A40402300941D79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A3E1A40402300941D79 /* ViewController.m */; };
+		3D5A9A3F1A40402300941D79 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A3E1A40402300941D79 /* AuthViewController.m */; };
 		3D5A9A421A40402300941D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A401A40402300941D79 /* Main.storyboard */; };
 		3D5A9A441A40402300941D79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A431A40402300941D79 /* Images.xcassets */; };
 		3D5A9A471A40402300941D79 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A451A40402300941D79 /* LaunchScreen.xib */; };
@@ -34,8 +34,8 @@
 		3D5A9A371A40402200941D79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D5A9A381A40402300941D79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3D5A9A3B1A40402300941D79 /* iBelieve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iBelieve.xcdatamodel; sourceTree = "<group>"; };
-		3D5A9A3D1A40402300941D79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3D5A9A3E1A40402300941D79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D5A9A3D1A40402300941D79 /* AuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		3D5A9A3E1A40402300941D79 /* AuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
 		3D5A9A411A40402300941D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D5A9A431A40402300941D79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3D5A9A461A40402300941D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			children = (
 				3D5A9A371A40402200941D79 /* AppDelegate.h */,
 				3D5A9A381A40402300941D79 /* AppDelegate.m */,
-				3D5A9A3D1A40402300941D79 /* ViewController.h */,
-				3D5A9A3E1A40402300941D79 /* ViewController.m */,
+				3D5A9A3D1A40402300941D79 /* AuthViewController.h */,
+				3D5A9A3E1A40402300941D79 /* AuthViewController.m */,
 				3D5A9A401A40402300941D79 /* Main.storyboard */,
 				3D5A9A431A40402300941D79 /* Images.xcassets */,
 				3D5A9A451A40402300941D79 /* LaunchScreen.xib */,
@@ -225,7 +225,7 @@
 			files = (
 				3D5A9A391A40402300941D79 /* AppDelegate.m in Sources */,
 				3D5A9A361A40402200941D79 /* main.m in Sources */,
-				3D5A9A3F1A40402300941D79 /* ViewController.m in Sources */,
+				3D5A9A3F1A40402300941D79 /* AuthViewController.m in Sources */,
 				3D5A9A3C1A40402300941D79 /* iBelieve.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +423,7 @@
 				3D5A9A581A40402300941D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D5A9A591A40402300941D79 /* Build configuration list for PBXNativeTarget "iBelieveTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				3D5A9A5B1A40402300941D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

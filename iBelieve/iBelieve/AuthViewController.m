@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 iBelieve. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AuthViewController.h"
 
-@interface ViewController ()
+@interface AuthViewController ()
 
 @end
 
-@implementation ViewController
+@implementation AuthViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
