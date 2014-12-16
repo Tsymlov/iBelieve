@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D5A9A361A40402200941D79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A351A40402200941D79 /* main.m */; };
+		3D5A9A391A40402300941D79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A381A40402300941D79 /* AppDelegate.m */; };
+		3D5A9A3C1A40402300941D79 /* iBelieve.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A3A1A40402300941D79 /* iBelieve.xcdatamodeld */; };
+		3D5A9A3F1A40402300941D79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A3E1A40402300941D79 /* ViewController.m */; };
+		3D5A9A421A40402300941D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A401A40402300941D79 /* Main.storyboard */; };
+		3D5A9A441A40402300941D79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A431A40402300941D79 /* Images.xcassets */; };
+		3D5A9A471A40402300941D79 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A451A40402300941D79 /* LaunchScreen.xib */; };
+		3D5A9A531A40402300941D79 /* iBelieveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A521A40402300941D79 /* iBelieveTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D5A9A4D1A40402300941D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D5A9A281A40402200941D79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D5A9A2F1A40402200941D79;
+			remoteInfo = iBelieve;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D5A9A301A40402200941D79 /* iBelieve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBelieve.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5A9A341A40402200941D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5A9A351A40402200941D79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D5A9A371A40402200941D79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D5A9A381A40402300941D79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D5A9A3B1A40402300941D79 /* iBelieve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iBelieve.xcdatamodel; sourceTree = "<group>"; };
+		3D5A9A3D1A40402300941D79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D5A9A3E1A40402300941D79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D5A9A411A40402300941D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D5A9A431A40402300941D79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D5A9A461A40402300941D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3D5A9A4C1A40402300941D79 /* iBelieveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBelieveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5A9A511A40402300941D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5A9A521A40402300941D79 /* iBelieveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBelieveTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D5A9A2D1A40402200941D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5A9A491A40402300941D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D5A9A271A40402200941D79 = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A321A40402200941D79 /* iBelieve */,
+				3D5A9A4F1A40402300941D79 /* iBelieveTests */,
+				3D5A9A311A40402200941D79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D5A9A311A40402200941D79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A301A40402200941D79 /* iBelieve.app */,
+				3D5A9A4C1A40402300941D79 /* iBelieveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D5A9A321A40402200941D79 /* iBelieve */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A371A40402200941D79 /* AppDelegate.h */,
+				3D5A9A381A40402300941D79 /* AppDelegate.m */,
+				3D5A9A3D1A40402300941D79 /* ViewController.h */,
+				3D5A9A3E1A40402300941D79 /* ViewController.m */,
+				3D5A9A401A40402300941D79 /* Main.storyboard */,
+				3D5A9A431A40402300941D79 /* Images.xcassets */,
+				3D5A9A451A40402300941D79 /* LaunchScreen.xib */,
+				3D5A9A3A1A40402300941D79 /* iBelieve.xcdatamodeld */,
+				3D5A9A331A40402200941D79 /* Supporting Files */,
+			);
+			path = iBelieve;
+			sourceTree = "<group>";
+		};
+		3D5A9A331A40402200941D79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A341A40402200941D79 /* Info.plist */,
+				3D5A9A351A40402200941D79 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D5A9A4F1A40402300941D79 /* iBelieveTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A521A40402300941D79 /* iBelieveTests.m */,
+				3D5A9A501A40402300941D79 /* Supporting Files */,
+			);
+			path = iBelieveTests;
+			sourceTree = "<group>";
+		};
+		3D5A9A501A40402300941D79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A511A40402300941D79 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D5A9A2F1A40402200941D79 /* iBelieve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5A9A561A40402300941D79 /* Build configuration list for PBXNativeTarget "iBelieve" */;
+			buildPhases = (
+				3D5A9A2C1A40402200941D79 /* Sources */,
+				3D5A9A2D1A40402200941D79 /* Frameworks */,
+				3D5A9A2E1A40402200941D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBelieve;
+			productName = iBelieve;
+			productReference = 3D5A9A301A40402200941D79 /* iBelieve.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D5A9A4B1A40402300941D79 /* iBelieveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5A9A591A40402300941D79 /* Build configuration list for PBXNativeTarget "iBelieveTests" */;
+			buildPhases = (
+				3D5A9A481A40402300941D79 /* Sources */,
+				3D5A9A491A40402300941D79 /* Frameworks */,
+				3D5A9A4A1A40402300941D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D5A9A4E1A40402300941D79 /* PBXTargetDependency */,
+			);
+			name = iBelieveTests;
+			productName = iBelieveTests;
+			productReference = 3D5A9A4C1A40402300941D79 /* iBelieveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D5A9A281A40402200941D79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = iBelieve;
+				TargetAttributes = {
+					3D5A9A2F1A40402200941D79 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = FLGLYU48EN;
+					};
+					3D5A9A4B1A40402300941D79 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 3D5A9A2F1A40402200941D79;
+					};
+				};
+			};
+			buildConfigurationList = 3D5A9A2B1A40402200941D79 /* Build configuration list for PBXProject "iBelieve" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D5A9A271A40402200941D79;
+			productRefGroup = 3D5A9A311A40402200941D79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D5A9A2F1A40402200941D79 /* iBelieve */,
+				3D5A9A4B1A40402300941D79 /* iBelieveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D5A9A2E1A40402200941D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5A9A421A40402300941D79 /* Main.storyboard in Resources */,
+				3D5A9A471A40402300941D79 /* LaunchScreen.xib in Resources */,
+				3D5A9A441A40402300941D79 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5A9A4A1A40402300941D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D5A9A2C1A40402200941D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5A9A391A40402300941D79 /* AppDelegate.m in Sources */,
+				3D5A9A361A40402200941D79 /* main.m in Sources */,
+				3D5A9A3F1A40402300941D79 /* ViewController.m in Sources */,
+				3D5A9A3C1A40402300941D79 /* iBelieve.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5A9A481A40402300941D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5A9A531A40402300941D79 /* iBelieveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D5A9A4E1A40402300941D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D5A9A2F1A40402200941D79 /* iBelieve */;
+			targetProxy = 3D5A9A4D1A40402300941D79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D5A9A401A40402300941D79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D5A9A411A40402300941D79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D5A9A451A40402300941D79 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D5A9A461A40402300941D79 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D5A9A541A40402300941D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D5A9A551A40402300941D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D5A9A571A40402300941D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iBelieve/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		3D5A9A581A40402300941D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iBelieve/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		3D5A9A5A1A40402300941D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iBelieveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iBelieve.app/iBelieve";
+			};
+			name = Debug;
+		};
+		3D5A9A5B1A40402300941D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iBelieveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iBelieve.app/iBelieve";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D5A9A2B1A40402200941D79 /* Build configuration list for PBXProject "iBelieve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5A9A541A40402300941D79 /* Debug */,
+				3D5A9A551A40402300941D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5A9A561A40402300941D79 /* Build configuration list for PBXNativeTarget "iBelieve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5A9A571A40402300941D79 /* Debug */,
+				3D5A9A581A40402300941D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D5A9A591A40402300941D79 /* Build configuration list for PBXNativeTarget "iBelieveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5A9A5A1A40402300941D79 /* Debug */,
+				3D5A9A5B1A40402300941D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D5A9A3A1A40402300941D79 /* iBelieve.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D5A9A3B1A40402300941D79 /* iBelieve.xcdatamodel */,
+			);
+			currentVersion = 3D5A9A3B1A40402300941D79 /* iBelieve.xcdatamodel */;
+			path = iBelieve.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D5A9A281A40402200941D79 /* Project object */;
+}
