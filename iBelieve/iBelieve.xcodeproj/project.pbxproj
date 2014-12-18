@@ -58,6 +58,7 @@
 		3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestorePasswordViewController.m; sourceTree = "<group>"; };
 		3D5A9AD71A42EAF300941D79 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		3D5A9AD81A42EAF300941D79 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3D5A9ADE1A42F34200941D79 /* Confessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confessions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 			children = (
 				3D5A9AD71A42EAF300941D79 /* User.h */,
 				3D5A9AD81A42EAF300941D79 /* User.m */,
+				3D5A9ADE1A42F34200941D79 /* Confessions.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
