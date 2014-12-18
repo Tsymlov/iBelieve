@@ -82,7 +82,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="4Z8-bx-uT4" kind="show" id="eJd-G9-bZp"/>
+                        <segue destination="4Z8-bx-uT4" kind="show" identifier="FromRestoreToRegistration" id="eJd-G9-bZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRY-2E-paH" userLabel="First Responder" sceneMemberID="firstResponder"/>
