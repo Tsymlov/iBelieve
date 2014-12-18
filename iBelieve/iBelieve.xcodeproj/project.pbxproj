@@ -51,6 +51,7 @@
 		3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigistrationViewController.m; sourceTree = "<group>"; };
 		3D5A9A621A40462600941D79 /* StartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
 		3D5A9A631A40462600941D79 /* StartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
+		3D5A9A661A40486D00941D79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,19 +93,12 @@
 		3D5A9A321A40402200941D79 /* iBelieve */ = {
 			isa = PBXGroup;
 			children = (
+				3D5A9AD31A42E49C00941D79 /* Controllers */,
+				3D5A9AD21A42E49200941D79 /* Views */,
+				3D5A9AD11A42E48100941D79 /* Models */,
 				3D5A9A371A40402200941D79 /* AppDelegate.h */,
 				3D5A9A381A40402300941D79 /* AppDelegate.m */,
-				3D5A9A3D1A40402300941D79 /* AuthViewController.h */,
-				3D5A9A3E1A40402300941D79 /* AuthViewController.m */,
-				3D5A9A401A40402300941D79 /* Main.storyboard */,
-				3D5A9A621A40462600941D79 /* StartPageViewController.h */,
-				3D5A9A631A40462600941D79 /* StartPageViewController.m */,
-				3D5A9A5F1A4044CA00941D79 /* RigistrationViewController.h */,
-				3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */,
-				3D5A9A5C1A4043DB00941D79 /* MainPageViewController.h */,
-				3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */,
 				3D5A9A431A40402300941D79 /* Images.xcassets */,
-				3D5A9A451A40402300941D79 /* LaunchScreen.xib */,
 				3D5A9A3A1A40402300941D79 /* iBelieve.xcdatamodeld */,
 				3D5A9A331A40402200941D79 /* Supporting Files */,
 			);
@@ -135,6 +129,37 @@
 				3D5A9A511A40402300941D79 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D5A9AD11A42E48100941D79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3D5A9AD21A42E49200941D79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A451A40402300941D79 /* LaunchScreen.xib */,
+				3D5A9A401A40402300941D79 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3D5A9AD31A42E49C00941D79 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A9A621A40462600941D79 /* StartPageViewController.h */,
+				3D5A9A631A40462600941D79 /* StartPageViewController.m */,
+				3D5A9A5F1A4044CA00941D79 /* RigistrationViewController.h */,
+				3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */,
+				3D5A9A5C1A4043DB00941D79 /* MainPageViewController.h */,
+				3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */,
+				3D5A9A3D1A40402300941D79 /* AuthViewController.h */,
+				3D5A9A3E1A40402300941D79 /* AuthViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +296,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D5A9A411A40402300941D79 /* Base */,
+				3D5A9A661A40486D00941D79 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

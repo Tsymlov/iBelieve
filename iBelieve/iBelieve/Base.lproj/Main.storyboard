@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dgX-7C-Z4C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x7l-fq-x9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -23,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYa-6F-PMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714" y="743.25"/>
+            <point key="canvasLocation" x="-708" y="764.25"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -55,6 +56,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZEX-Ea-gIy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hIT-ah-kdO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -75,6 +77,7 @@
                         <viewControllerLayoutGuide type="bottom" id="i4z-dS-4KV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uAD-lu-Kdn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -85,6 +88,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="R1X-b8-Y7e"/>
+        <segue reference="t5A-wQ-6qH"/>
     </inferredMetricsTieBreakers>
 </document>
