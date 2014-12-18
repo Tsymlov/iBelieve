@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Confessions.h"
 
 @interface User : NSObject
 
@@ -15,5 +16,6 @@
 @property (nonatomic, strong) NSString* password;
 @property (nonatomic, strong) NSString* email;
 @property (nonatomic, strong) NSString* userPicImagePath;
+@property (nonatomic, assign) enum confessions confession;
 
 @end
