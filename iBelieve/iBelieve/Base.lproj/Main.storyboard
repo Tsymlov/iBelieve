@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYa-6F-PMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-708" y="764.25"/>
+            <point key="canvasLocation" x="-615" y="1060.5"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="271.5" y="391.5"/>
+            <point key="canvasLocation" x="271.5" y="730.5"/>
         </scene>
         <!--Rigistration View Controller-->
         <scene sceneID="kqs-uE-r5J">
@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22P-DL-xnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="271.5" y="1147.5"/>
+            <point key="canvasLocation" x="271.5" y="1425"/>
         </scene>
         <!--Restore Password View Controller-->
         <scene sceneID="rKU-PE-V1K">
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRY-2E-paH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-708" y="1824"/>
+            <point key="canvasLocation" x="-615" y="2346"/>
         </scene>
         <!--Main Page View Controller-->
         <scene sceneID="S1g-Kj-CSS">
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIr-jv-mU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305" y="708"/>
+            <point key="canvasLocation" x="1206" y="1060.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
