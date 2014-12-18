@@ -14,7 +14,7 @@
 		3D5A9A421A40402300941D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A401A40402300941D79 /* Main.storyboard */; };
 		3D5A9A441A40402300941D79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A431A40402300941D79 /* Images.xcassets */; };
 		3D5A9A471A40402300941D79 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5A9A451A40402300941D79 /* LaunchScreen.xib */; };
-		3D5A9A531A40402300941D79 /* iBelieveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A521A40402300941D79 /* iBelieveTests.m */; };
+		3D5A9A531A40402300941D79 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A521A40402300941D79 /* UserTests.m */; };
 		3D5A9A5E1A4043DB00941D79 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */; };
 		3D5A9A611A4044CA00941D79 /* RigistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */; };
 		3D5A9A641A40462600941D79 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A631A40462600941D79 /* StartPageViewController.m */; };
@@ -46,7 +46,7 @@
 		3D5A9A461A40402300941D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3D5A9A4C1A40402300941D79 /* iBelieveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBelieveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5A9A511A40402300941D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D5A9A521A40402300941D79 /* iBelieveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBelieveTests.m; sourceTree = "<group>"; };
+		3D5A9A521A40402300941D79 /* UserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
 		3D5A9A5C1A4043DB00941D79 /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
 		3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
 		3D5A9A5F1A4044CA00941D79 /* RigistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigistrationViewController.h; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		3D5A9A4F1A40402300941D79 /* iBelieveTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D5A9A521A40402300941D79 /* iBelieveTests.m */,
+				3D5A9A521A40402300941D79 /* UserTests.m */,
 				3D5A9A501A40402300941D79 /* Supporting Files */,
 			);
 			path = iBelieveTests;
@@ -291,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5A9A531A40402300941D79 /* iBelieveTests.m in Sources */,
+				3D5A9A531A40402300941D79 /* UserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
