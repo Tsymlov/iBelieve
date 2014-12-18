@@ -18,6 +18,7 @@
 		3D5A9A5E1A4043DB00941D79 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */; };
 		3D5A9A611A4044CA00941D79 /* RigistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A601A4044CA00941D79 /* RigistrationViewController.m */; };
 		3D5A9A641A40462600941D79 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A631A40462600941D79 /* StartPageViewController.m */; };
+		3D5A9AD61A42E5C800941D79 /* RestorePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		3D5A9A621A40462600941D79 /* StartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
 		3D5A9A631A40462600941D79 /* StartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
 		3D5A9A661A40486D00941D79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3D5A9AD41A42E5C800941D79 /* RestorePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestorePasswordViewController.h; sourceTree = "<group>"; };
+		3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestorePasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				3D5A9A5D1A4043DB00941D79 /* MainPageViewController.m */,
 				3D5A9A3D1A40402300941D79 /* AuthViewController.h */,
 				3D5A9A3E1A40402300941D79 /* AuthViewController.m */,
+				3D5A9AD41A42E5C800941D79 /* RestorePasswordViewController.h */,
+				3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5A9AD61A42E5C800941D79 /* RestorePasswordViewController.m in Sources */,
 				3D5A9A5E1A4043DB00941D79 /* MainPageViewController.m in Sources */,
 				3D5A9A391A40402300941D79 /* AppDelegate.m in Sources */,
 				3D5A9A361A40402200941D79 /* main.m in Sources */,
