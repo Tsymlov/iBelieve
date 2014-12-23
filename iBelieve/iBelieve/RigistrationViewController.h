@@ -10,4 +10,9 @@
 
 @interface RigistrationViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *email;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+- (IBAction)registrationTapped:(id)sender;
+- (IBAction)termsOfUseTapped:(id)sender;
+
 @end

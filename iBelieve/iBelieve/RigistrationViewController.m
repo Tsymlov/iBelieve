@@ -34,4 +34,28 @@
 }
 */
 
+- (IBAction)registrationTapped:(id)sender {
+    if ([self checkTestFields]) {
+        [self performSegueWithIdentifier:@"FromRegistrationToMainPage" sender:self];
+    }else{
+        [self showAlert];
+    }
+}
+
+- (BOOL)checkTestFields{
+    //TODO:Implement it.
+    return YES;
+}
+
+- (void)showAlert{
+    //TODO:Implement it.
+}
+
+- (IBAction)termsOfUseTapped:(id)sender {
+    [self showTermsOfUse];
+}
+
+- (void)showTermsOfUse{
+    //TODO:Implement it.
+}
 @end

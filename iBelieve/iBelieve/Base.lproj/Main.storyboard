@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sY1-XV-NW7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -49,10 +50,10 @@
                                 <exclude reference="lgh-hX-EBZ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="ake-Qn-e5v"/>
-                                <exclude reference="fcd-yj-xKc"/>
                                 <exclude reference="aj7-kQ-S4f"/>
                                 <exclude reference="rZT-k7-XwD"/>
+                                <exclude reference="ake-Qn-e5v"/>
+                                <exclude reference="fcd-yj-xKc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -61,10 +62,10 @@
                                 <include reference="lgh-hX-EBZ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ake-Qn-e5v"/>
-                                <include reference="fcd-yj-xKc"/>
                                 <include reference="aj7-kQ-S4f"/>
                                 <include reference="rZT-k7-XwD"/>
+                                <include reference="ake-Qn-e5v"/>
+                                <include reference="fcd-yj-xKc"/>
                             </mask>
                         </variation>
                     </view>
@@ -165,18 +166,38 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Электронная почта" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jIh-HJ-Kxb">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Oh2-uF-1ha"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="50" y="181" width="300" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Oh2-uF-1ha"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Oh2-uF-1ha"/>
+                                    </mask>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7z-2A-pFO">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="6F3-Q8-dX8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="50" y="219" width="300" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6F3-Q8-dX8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6F3-Q8-dX8"/>
+                                    </mask>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B1-ZH-SBY">
@@ -184,17 +205,47 @@
                                 <state key="normal" title="Зарегистрироваться">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="125" y="257" width="150" height="30"/>
-                                </variation>
+                                <connections>
+                                    <action selector="registrationTapped:" destination="4Z8-bx-uT4" eventType="touchUpInside" id="wTT-zQ-FwT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-SS-xMM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Соглашение об использовании">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="termsOfUseTapped:" destination="4Z8-bx-uT4" eventType="touchUpInside" id="7R0-tP-JOc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jIh-HJ-Kxb" firstAttribute="top" secondItem="MyX-rn-Nzc" secondAttribute="bottom" constant="161" id="4hS-Ho-wtl"/>
+                            <constraint firstItem="s7z-2A-pFO" firstAttribute="top" secondItem="jIh-HJ-Kxb" secondAttribute="bottom" constant="8" id="6Am-lq-bHE"/>
+                            <constraint firstItem="5B1-ZH-SBY" firstAttribute="top" secondItem="s7z-2A-pFO" secondAttribute="bottom" constant="8" id="E9l-tJ-erz"/>
+                            <constraint firstAttribute="centerX" secondItem="DEI-SS-xMM" secondAttribute="centerX" constant="-0.5" id="Ey8-Rh-rzv"/>
+                            <constraint firstAttribute="centerX" secondItem="s7z-2A-pFO" secondAttribute="centerX" id="IU4-I5-QBj"/>
+                            <constraint firstItem="ZEX-Ea-gIy" firstAttribute="top" secondItem="DEI-SS-xMM" secondAttribute="bottom" constant="20" id="JMt-L6-JfY"/>
+                            <constraint firstAttribute="centerX" secondItem="jIh-HJ-Kxb" secondAttribute="centerX" id="khE-F1-hPi"/>
+                            <constraint firstAttribute="centerX" secondItem="5B1-ZH-SBY" secondAttribute="centerX" id="zgd-ys-JdP"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="jIh-HJ-Kxb"/>
                                 <exclude reference="s7z-2A-pFO"/>
                                 <exclude reference="5B1-ZH-SBY"/>
+                                <exclude reference="DEI-SS-xMM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4hS-Ho-wtl"/>
+                                <exclude reference="khE-F1-hPi"/>
+                                <exclude reference="6Am-lq-bHE"/>
+                                <exclude reference="IU4-I5-QBj"/>
+                                <exclude reference="E9l-tJ-erz"/>
+                                <exclude reference="zgd-ys-JdP"/>
+                                <exclude reference="Ey8-Rh-rzv"/>
+                                <exclude reference="JMt-L6-JfY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -202,10 +253,23 @@
                                 <include reference="jIh-HJ-Kxb"/>
                                 <include reference="s7z-2A-pFO"/>
                                 <include reference="5B1-ZH-SBY"/>
+                                <include reference="DEI-SS-xMM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4hS-Ho-wtl"/>
+                                <include reference="khE-F1-hPi"/>
+                                <include reference="6Am-lq-bHE"/>
+                                <include reference="IU4-I5-QBj"/>
+                                <include reference="E9l-tJ-erz"/>
+                                <include reference="zgd-ys-JdP"/>
+                                <include reference="Ey8-Rh-rzv"/>
+                                <include reference="JMt-L6-JfY"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="email" destination="jIh-HJ-Kxb" id="IAL-dF-5ft"/>
+                        <outlet property="password" destination="s7z-2A-pFO" id="uOW-Fs-TnD"/>
                         <segue destination="zbA-Z9-Yfa" kind="show" identifier="FromRegistrationToMainPage" id="R1X-b8-Y7e"/>
                     </connections>
                 </viewController>
@@ -279,20 +343,35 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainPageStub" translatesAutoresizingMaskIntoConstraints="NO" id="ph4-wn-zO4">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ph4-wn-zO4" secondAttribute="trailing" constant="-16" id="OR7-Xo-Y31"/>
+                            <constraint firstItem="i4z-dS-4KV" firstAttribute="top" secondItem="ph4-wn-zO4" secondAttribute="bottom" id="owL-CQ-NoX"/>
+                            <constraint firstItem="ph4-wn-zO4" firstAttribute="leading" secondItem="uAD-lu-Kdn" secondAttribute="leadingMargin" constant="-16" id="ukL-Xo-DLC"/>
+                            <constraint firstItem="ph4-wn-zO4" firstAttribute="top" secondItem="uAD-lu-Kdn" secondAttribute="topMargin" id="vgR-3I-Lhp"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ph4-wn-zO4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="OR7-Xo-Y31"/>
+                                <exclude reference="ukL-Xo-DLC"/>
+                                <exclude reference="vgR-3I-Lhp"/>
+                                <exclude reference="owL-CQ-NoX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ph4-wn-zO4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OR7-Xo-Y31"/>
+                                <include reference="ukL-Xo-DLC"/>
+                                <include reference="vgR-3I-Lhp"/>
+                                <include reference="owL-CQ-NoX"/>
                             </mask>
                         </variation>
                     </view>
@@ -307,6 +386,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dmJ-gl-m9l"/>
-        <segue reference="t5A-wQ-6qH"/>
+        <segue reference="R1X-b8-Y7e"/>
     </inferredMetricsTieBreakers>
 </document>
