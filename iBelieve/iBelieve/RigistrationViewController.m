@@ -9,7 +9,6 @@
 #import "RigistrationViewController.h"
 
 @interface RigistrationViewController ()
-
 @end
 
 @implementation RigistrationViewController
@@ -44,11 +43,14 @@
 
 - (BOOL)checkTestFields{
     //TODO:Implement it.
-    return YES;
+    return NO;
 }
 
 - (void)showAlert{
-    //TODO:Implement it.
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Некорректное значение" message:@"Проверьте правильность заполнения электронной почты и пароля." preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (IBAction)termsOfUseTapped:(id)sender {
