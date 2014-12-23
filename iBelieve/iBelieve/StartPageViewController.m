@@ -34,4 +34,11 @@
 }
 */
 
+- (IBAction)enterTapped:(id)sender {
+    [self performSegueWithIdentifier:@"FromStartPageToAuth" sender:self];
+}
+
+- (IBAction)registrationTapped:(id)sender {
+    [self performSegueWithIdentifier:@"FromStartPageToRegistration" sender:self];
+}
 @end

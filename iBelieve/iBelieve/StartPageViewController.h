@@ -10,4 +10,7 @@
 
 @interface StartPageViewController : UIViewController
 
+- (IBAction)enterTapped:(id)sender;
+- (IBAction)registrationTapped:(id)sender;
+
 @end
