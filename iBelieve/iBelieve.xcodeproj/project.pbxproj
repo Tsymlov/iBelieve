@@ -20,6 +20,8 @@
 		3D5A9A641A40462600941D79 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A631A40462600941D79 /* StartPageViewController.m */; };
 		3D5A9AD61A42E5C800941D79 /* RestorePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */; };
 		3D5A9AD91A42EAF300941D79 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9AD81A42EAF300941D79 /* User.m */; };
+		3DB7EE881A4AC43800267511 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7EE871A4AC43800267511 /* Validator.m */; };
+		3DB7EE8A1A4AC53500267511 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7EE891A4AC53500267511 /* ValidatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		3D5A9AD71A42EAF300941D79 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		3D5A9AD81A42EAF300941D79 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		3D5A9ADE1A42F34200941D79 /* Confessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confessions.h; sourceTree = "<group>"; };
+		3DB7EE861A4AC43800267511 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
+		3DB7EE871A4AC43800267511 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
+		3DB7EE891A4AC53500267511 /* ValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,7 @@
 		3D5A9A321A40402200941D79 /* iBelieve */ = {
 			isa = PBXGroup;
 			children = (
+				3DB7EE8B1A4AC70500267511 /* Utils */,
 				3D5A9AD31A42E49C00941D79 /* Controllers */,
 				3D5A9AD21A42E49200941D79 /* Views */,
 				3D5A9AD11A42E48100941D79 /* Models */,
@@ -124,6 +130,7 @@
 		3D5A9A4F1A40402300941D79 /* iBelieveTests */ = {
 			isa = PBXGroup;
 			children = (
+				3DB7EE891A4AC53500267511 /* ValidatorTests.m */,
 				3D5A9A521A40402300941D79 /* UserTests.m */,
 				3D5A9A501A40402300941D79 /* Supporting Files */,
 			);
@@ -172,6 +179,15 @@
 				3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3DB7EE8B1A4AC70500267511 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3DB7EE861A4AC43800267511 /* Validator.h */,
+				3DB7EE871A4AC43800267511 /* Validator.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +293,7 @@
 			files = (
 				3D5A9AD61A42E5C800941D79 /* RestorePasswordViewController.m in Sources */,
 				3D5A9A5E1A4043DB00941D79 /* MainPageViewController.m in Sources */,
+				3DB7EE881A4AC43800267511 /* Validator.m in Sources */,
 				3D5A9AD91A42EAF300941D79 /* User.m in Sources */,
 				3D5A9A391A40402300941D79 /* AppDelegate.m in Sources */,
 				3D5A9A361A40402200941D79 /* main.m in Sources */,
@@ -291,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB7EE8A1A4AC53500267511 /* ValidatorTests.m in Sources */,
 				3D5A9A531A40402300941D79 /* UserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

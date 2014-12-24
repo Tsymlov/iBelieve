@@ -14,6 +14,9 @@
 
 @implementation StartPageViewController
 
+NSString* const fromStartPageToAuthSegueID = @"FromStartPageToAuth";
+NSString* const fromStartPageToRegistrationSegueID = @"FromStartPageToRegistration";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -35,10 +38,10 @@
 */
 
 - (IBAction)enterTapped:(id)sender {
-    [self performSegueWithIdentifier:@"FromStartPageToAuth" sender:self];
+    [self performSegueWithIdentifier:fromStartPageToAuthSegueID sender:self];
 }
 
 - (IBAction)registrationTapped:(id)sender {
-    [self performSegueWithIdentifier:@"FromStartPageToRegistration" sender:self];
+    [self performSegueWithIdentifier:fromStartPageToRegistrationSegueID sender:self];
 }
 @end

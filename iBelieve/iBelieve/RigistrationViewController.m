@@ -7,11 +7,17 @@
 //
 
 #import "RigistrationViewController.h"
+#import "Validator.h"
 
 @interface RigistrationViewController ()
 @end
 
 @implementation RigistrationViewController
+
+NSString *const incorrectValueTitle = @"Некорректное значение";
+NSString *const checkEmailAndPasswordMessage = @"Проверьте правильность заполнения электронной почты и пароля.";
+NSString *const okActionTitle = @"Ok";
+NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,21 +40,27 @@
 */
 
 - (IBAction)registrationTapped:(id)sender {
-    if ([self checkTestFields]) {
-        [self performSegueWithIdentifier:@"FromRegistrationToMainPage" sender:self];
+    [self goToMainPageIfAllOk];
+}
+
+
+- (void)goToMainPageIfAllOk {
+    if ([self checkTextFields]) {
+        [self performSegueWithIdentifier:fromRegistrationToMainPageSegueID sender:self];
     }else{
         [self showAlert];
     }
 }
 
-- (BOOL)checkTestFields{
-    //TODO:Implement it.
-    return NO;
+- (BOOL)checkTextFields{
+    NSString* email = self.email.text;
+    NSString* password = self.password.text;
+    return [Validator checkEmail:email] && [Validator checkPassword:password];
 }
 
 - (void)showAlert{
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Некорректное значение" message:@"Проверьте правильность заполнения электронной почты и пароля." preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:incorrectValueTitle message:checkEmailAndPasswordMessage preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:okActionTitle style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:okAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
