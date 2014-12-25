@@ -19,7 +19,7 @@ NSString *const checkEmailAndPasswordMessage = @"Проверьте правил
 NSString *const okActionTitle = @"Ok";
 NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage";
 NSString *const fromRegistrationToTermsSegueID = @"FromRegistrationToTerms";
-NSString *const connectionAlertTitle = @"Сервер не доступен";
+NSString *const connectionAlertTitle = @"Сервер недоступен";
 NSString *const connectionAlertMessage = @"Попробуйте повторить позже.";
 
 - (void)viewDidLoad {
