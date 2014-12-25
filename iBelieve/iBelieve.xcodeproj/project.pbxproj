@@ -20,6 +20,7 @@
 		3D5A9A641A40462600941D79 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9A631A40462600941D79 /* StartPageViewController.m */; };
 		3D5A9AD61A42E5C800941D79 /* RestorePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */; };
 		3D5A9AD91A42EAF300941D79 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A9AD81A42EAF300941D79 /* User.m */; };
+		3DA34D451A4C1D200055569D /* TermsOfUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA34D441A4C1D200055569D /* TermsOfUseViewController.m */; };
 		3DB7EE881A4AC43800267511 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7EE871A4AC43800267511 /* Validator.m */; };
 		3DB7EE8A1A4AC53500267511 /* ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7EE891A4AC53500267511 /* ValidatorTests.m */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,8 @@
 		3D5A9AD71A42EAF300941D79 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		3D5A9AD81A42EAF300941D79 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		3D5A9ADE1A42F34200941D79 /* Confessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confessions.h; sourceTree = "<group>"; };
+		3DA34D431A4C1D200055569D /* TermsOfUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsOfUseViewController.h; sourceTree = "<group>"; };
+		3DA34D441A4C1D200055569D /* TermsOfUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsOfUseViewController.m; sourceTree = "<group>"; };
 		3DB7EE861A4AC43800267511 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
 		3DB7EE871A4AC43800267511 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
 		3DB7EE891A4AC53500267511 /* ValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatorTests.m; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				3D5A9A3E1A40402300941D79 /* AuthViewController.m */,
 				3D5A9AD41A42E5C800941D79 /* RestorePasswordViewController.h */,
 				3D5A9AD51A42E5C800941D79 /* RestorePasswordViewController.m */,
+				3DA34D431A4C1D200055569D /* TermsOfUseViewController.h */,
+				3DA34D441A4C1D200055569D /* TermsOfUseViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				3DB7EE881A4AC43800267511 /* Validator.m in Sources */,
 				3D5A9AD91A42EAF300941D79 /* User.m in Sources */,
 				3D5A9A391A40402300941D79 /* AppDelegate.m in Sources */,
+				3DA34D451A4C1D200055569D /* TermsOfUseViewController.m in Sources */,
 				3D5A9A361A40402200941D79 /* main.m in Sources */,
 				3D5A9A3F1A40402300941D79 /* AuthViewController.m in Sources */,
 				3D5A9A3C1A40402300941D79 /* iBelieve.xcdatamodeld in Sources */,

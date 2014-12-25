@@ -18,6 +18,7 @@ NSString *const incorrectValueTitle = @"Некорректное значени�
 NSString *const checkEmailAndPasswordMessage = @"Проверьте правильность заполнения электронной почты и пароля.";
 NSString *const okActionTitle = @"Ok";
 NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage";
+NSString *const fromRegistrationToTermsSegueID = @"FromRegistrationToTerms";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -70,6 +71,6 @@ NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage
 }
 
 - (void)showTermsOfUse{
-    //TODO:Implement it.
+    [self performSegueWithIdentifier:fromRegistrationToTermsSegueID sender:self];
 }
 @end
