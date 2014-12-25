@@ -19,6 +19,7 @@ NSString *const checkEmailAndPasswordMessage = @"Проверьте правил
 NSString *const okActionTitle = @"Ok";
 NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage";
 NSString *const fromRegistrationToTermsSegueID = @"FromRegistrationToTerms";
+NSString *const fromRegistrationToStartSegueIS = @"FromRegistrationToStart";
 NSString *const connectionAlertTitle = @"Сервер недоступен";
 NSString *const connectionAlertMessage = @"Попробуйте повторить позже.";
 
@@ -80,6 +81,10 @@ NSString *const connectionAlertMessage = @"Попробуйте повторит
 
 - (IBAction)termsOfUseTapped:(id)sender {
     [self showTermsOfUse];
+}
+
+- (IBAction)backButtonTapped:(id)sender {
+    [self performSegueWithIdentifier:fromRegistrationToStartSegueIS sender:self];
 }
 
 - (void)showTermsOfUse{

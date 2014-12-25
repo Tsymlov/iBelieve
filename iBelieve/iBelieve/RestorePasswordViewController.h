@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RestorePasswordViewController : UIViewController
+- (IBAction)backTapped:(id)sender;
 
 @end

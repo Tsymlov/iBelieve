@@ -14,6 +14,8 @@
 
 @implementation RestorePasswordViewController
 
+NSString *const fromRestoreToAuthSegueID = @"FromRestoreToAuth";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -34,4 +36,7 @@
 }
 */
 
+- (IBAction)backTapped:(id)sender {
+    [self performSegueWithIdentifier:fromRestoreToAuthSegueID sender:self];
+}
 @end

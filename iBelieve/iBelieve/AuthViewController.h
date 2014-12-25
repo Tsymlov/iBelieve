@@ -10,6 +10,8 @@
 
 @interface AuthViewController : UIViewController
 
+- (IBAction)backButtonTapped:(id)sender;
+- (IBAction)forgotPassTapped:(id)sender;
 
 @end
 
