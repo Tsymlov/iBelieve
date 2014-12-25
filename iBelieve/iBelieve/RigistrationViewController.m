@@ -56,7 +56,7 @@ NSString *const connectionAlertMessage = @"Попробуйте повторит
 
 //TODO: Implement this.
 - (BOOL)registerUser{
-    return NO;
+    return YES;
 }
 
 //TODO: Implement this.

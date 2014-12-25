@@ -14,6 +14,8 @@
 
 @implementation MainPageViewController
 
+NSString *const fromMainToStartPageSegueID = @"FromMainToStartPage";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -34,4 +36,7 @@
 }
 */
 
+- (IBAction)exitTapped:(id)sender {
+    [self performSegueWithIdentifier:fromMainToStartPageSegueID sender:self];
+}
 @end
