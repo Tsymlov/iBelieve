@@ -287,6 +287,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HXw-Xi-6le"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dSc-Dc-IHq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbU-QE-JX0">
@@ -301,7 +302,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anZ-NN-yHi">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Условия использования
+                                <string key="text">Условия использования
 
 Настоящие Условия использования вступают в силу с 19 января 2013 года. Предыдущие Условия использования вы можете найти здесь. 
 
@@ -489,7 +490,7 @@ Instagram, LLC ATTN: Arbitration Opt-out 1601 Willow Rd. Menlo Park, CA 94025
 
 Программное обеспечение, связанное с Сервисом или доступное на Сервисе, может регулироваться экспортными ограничениями США. Таким образом, никакое программное обеспечение на Сервисе не может быть загружено, экспортировано или реэкспортировано: (a) в любую страну, в которую в США существует запрет на экспорт товаров, или резидентом этой страны; или (b) любым членом списка нежелательных лиц, составленного Министерством финансов США, или таблицы отказа в заказах, составленной Министерством торговли США. Загружая любое программное обеспечение, связанное с Сервисом, вы подтверждаете и гарантируете, что не располагаетесь на территории, не находитесь под юрисдикцией и не являетесь резидентом такой страны и не входите в такие списки. 
 
-Настоящие Условия использования вступают в силу с 19 января 2013 года. Настоящие Условия использования были написаны на английском языке (американский вариант). В случае возникновения противоречий между переведенным вариантом настоящих Условий использования и их вариантом на английском языке, следует руководствоваться английским вариантом.</mutableString>
+Настоящие Условия использования вступают в силу с 19 января 2013 года. Настоящие Условия использования были написаны на английском языке (американский вариант). В случае возникновения противоречий между переведенным вариантом настоящих Условий использования и их вариантом на английском языке, следует руководствоваться английским вариантом.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
@@ -510,12 +511,12 @@ Instagram, LLC ATTN: Arbitration Opt-out 1601 Willow Rd. Menlo Park, CA 94025
                                 <exclude reference="anZ-NN-yHi"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4gY-XN-9xF"/>
                                 <exclude reference="FU3-7V-2eu"/>
                                 <exclude reference="Q92-cf-jzc"/>
                                 <exclude reference="0wQ-z3-qRD"/>
                                 <exclude reference="LiB-7F-BRG"/>
                                 <exclude reference="bFS-W0-bHW"/>
-                                <exclude reference="4gY-XN-9xF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -524,12 +525,12 @@ Instagram, LLC ATTN: Arbitration Opt-out 1601 Willow Rd. Menlo Park, CA 94025
                                 <include reference="anZ-NN-yHi"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="4gY-XN-9xF"/>
                                 <include reference="FU3-7V-2eu"/>
                                 <include reference="Q92-cf-jzc"/>
                                 <include reference="0wQ-z3-qRD"/>
                                 <include reference="LiB-7F-BRG"/>
                                 <include reference="bFS-W0-bHW"/>
-                                <include reference="4gY-XN-9xF"/>
                             </mask>
                         </variation>
                     </view>

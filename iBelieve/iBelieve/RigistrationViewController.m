@@ -19,37 +19,32 @@ NSString *const checkEmailAndPasswordMessage = @"Проверьте правил
 NSString *const okActionTitle = @"Ok";
 NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage";
 NSString *const fromRegistrationToTermsSegueID = @"FromRegistrationToTerms";
+NSString *const connectionAlertTitle = @"Сервер не доступен";
+NSString *const connectionAlertMessage = @"Попробуйте повторить позже.";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)registrationTapped:(id)sender {
-    [self goToMainPageIfAllOk];
+    [self registerUserAndGoToMainPageIfAllOk];
 }
 
 
-- (void)goToMainPageIfAllOk {
+- (void)registerUserAndGoToMainPageIfAllOk {
     if ([self checkTextFields]) {
-        [self performSegueWithIdentifier:fromRegistrationToMainPageSegueID sender:self];
+        if ([self registerUser]) {
+            [self createUserAndSetAsCurrent];
+            [self performSegueWithIdentifier:fromRegistrationToMainPageSegueID sender:self];
+        }else{
+            [self showServerConnectionErrorAlert];
+        }
     }else{
-        [self showAlert];
+        [self showIncorrectInputAlert];
     }
 }
 
@@ -59,7 +54,24 @@ NSString *const fromRegistrationToTermsSegueID = @"FromRegistrationToTerms";
     return [Validator checkEmail:email] && [Validator checkPassword:password doesNotMatchEmail:email];
 }
 
-- (void)showAlert{
+//TODO: Implement this.
+- (BOOL)registerUser{
+    return NO;
+}
+
+//TODO: Implement this.
+- (void)createUserAndSetAsCurrent{
+    
+}
+
+- (void)showServerConnectionErrorAlert{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:connectionAlertTitle message:connectionAlertMessage preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:okActionTitle style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)showIncorrectInputAlert{
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:incorrectValueTitle message:checkEmailAndPasswordMessage preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* okAction = [UIAlertAction actionWithTitle:okActionTitle style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:okAction];
