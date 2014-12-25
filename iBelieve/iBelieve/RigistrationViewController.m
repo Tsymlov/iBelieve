@@ -55,7 +55,7 @@ NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage
 - (BOOL)checkTextFields{
     NSString* email = self.email.text;
     NSString* password = self.password.text;
-    return [Validator checkEmail:email] && [Validator checkPassword:password];
+    return [Validator checkEmail:email] && [Validator checkPassword:password doesNotMatchEmail:email];
 }
 
 - (void)showAlert{

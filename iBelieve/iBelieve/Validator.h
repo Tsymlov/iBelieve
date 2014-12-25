@@ -11,6 +11,7 @@
 @interface Validator : NSObject
 
 + (BOOL) checkEmail:(NSString*)value;
-+ (BOOL) checkPassword:(NSString*)value;
++ (BOOL) checkPassword:(NSString*)value doesNotMatchEmail:(NSString*)email;
++ (BOOL) checkEmail:(NSString *)email andPassword:(NSString*)pass;
 
 @end
