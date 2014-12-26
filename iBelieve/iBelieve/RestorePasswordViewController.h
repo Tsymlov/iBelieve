@@ -10,5 +10,6 @@
 
 @interface RestorePasswordViewController : UIViewController
 - (IBAction)backTapped:(id)sender;
+- (IBAction)restoreWasTapped:(id)sender;
 
 @end

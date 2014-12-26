@@ -8,16 +8,16 @@
 
 #import "Validator.h"
 
+static NSInteger const kMinPasswordLength = 6;
+static NSInteger const kMaxPasswordLength = 40;
+
+static NSString* const kCommerceA = @"@";
+
 @implementation Validator
-
-NSInteger const minPasswordLength = 6;
-NSInteger const maxPasswordLength = 40;
-
-NSString* const commerceA = @"@";
 
 + (BOOL) checkEmail:(NSString*)value{
     BOOL emailIsNotEmptyStringOrNil = [value length]>0;
-    BOOL emailContainsCommerceA = [value containsString:commerceA];
+    BOOL emailContainsCommerceA = [value containsString:kCommerceA];
     
     if ( ! emailIsNotEmptyStringOrNil ||
          ! emailContainsCommerceA){
@@ -28,8 +28,8 @@ NSString* const commerceA = @"@";
     NSString* lastCharacter = [value substringFromIndex:lastIndex];
     NSString* firstCharacter = [value substringToIndex:1];
     
-    BOOL commerceAIsNotLastChar = ! [lastCharacter isEqual:commerceA];
-    BOOL commerceAIsNotFirstChar = ! [firstCharacter isEqual:commerceA];
+    BOOL commerceAIsNotLastChar = ! [lastCharacter isEqual:kCommerceA];
+    BOOL commerceAIsNotFirstChar = ! [firstCharacter isEqual:kCommerceA];
     
     if( ! commerceAIsNotLastChar ||
         ! commerceAIsNotFirstChar) {
@@ -42,8 +42,8 @@ NSString* const commerceA = @"@";
 + (BOOL) checkPassword:(NSString*)value doesNotMatchEmail:(NSString*)email{
     BOOL passIsNotEmptyStringOrNil = [value length] > 0;
     BOOL passIsNotMatchingEmail = ![value isEqualToString:email];
-    BOOL passLengthIsNotLessThenMin = !([value length] < minPasswordLength);
-    BOOL passLengthIsNotMoreThenMax = !([value length] > maxPasswordLength);
+    BOOL passLengthIsNotLessThenMin = !([value length] < kMinPasswordLength);
+    BOOL passLengthIsNotMoreThenMax = !([value length] > kMaxPasswordLength);
     BOOL passDoesNotContainsDigitsOnly = YES; //TODO:
     
     if (passIsNotEmptyStringOrNil &&

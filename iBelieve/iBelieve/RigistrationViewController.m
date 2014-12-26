@@ -12,16 +12,16 @@
 @interface RigistrationViewController ()
 @end
 
-@implementation RigistrationViewController
+static NSString *const kIncorrectValueTitle = @"Некорректное значение";
+static NSString *const kCheckEmailAndPasswordMessage = @"Проверьте правильность заполнения электронной почты и пароля.";
+static NSString *const kOkActionTitle = @"Ok";
+static NSString *const kFromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage";
+static NSString *const kFromRegistrationToTermsSegueID = @"FromRegistrationToTerms";
+static NSString *const kFromRegistrationToStartSegueIS = @"FromRegistrationToStart";
+static NSString *const kConnectionAlertTitle = @"Сервер недоступен";
+static NSString *const kConnectionAlertMessage = @"Попробуйте повторить позже.";
 
-NSString *const incorrectValueTitle = @"Некорректное значение";
-NSString *const checkEmailAndPasswordMessage = @"Проверьте правильность заполнения электронной почты и пароля.";
-NSString *const okActionTitle = @"Ok";
-NSString *const fromRegistrationToMainPageSegueID = @"FromRegistrationToMainPage";
-NSString *const fromRegistrationToTermsSegueID = @"FromRegistrationToTerms";
-NSString *const fromRegistrationToStartSegueIS = @"FromRegistrationToStart";
-NSString *const connectionAlertTitle = @"Сервер недоступен";
-NSString *const connectionAlertMessage = @"Попробуйте повторить позже.";
+@implementation RigistrationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,7 +40,7 @@ NSString *const connectionAlertMessage = @"Попробуйте повторит
     if ([self checkTextFields]) {
         if ([self registerUser]) {
             [self createUserAndSetAsCurrent];
-            [self performSegueWithIdentifier:fromRegistrationToMainPageSegueID sender:self];
+            [self performSegueWithIdentifier:kFromRegistrationToMainPageSegueID sender:self];
         }else{
             [self showServerConnectionErrorAlert];
         }
@@ -66,15 +66,15 @@ NSString *const connectionAlertMessage = @"Попробуйте повторит
 }
 
 - (void)showServerConnectionErrorAlert{
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:connectionAlertTitle message:connectionAlertMessage preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction* okAction = [UIAlertAction actionWithTitle:okActionTitle style:UIAlertActionStyleDefault handler:nil];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:kConnectionAlertTitle message:kConnectionAlertMessage preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:kOkActionTitle style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:okAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)showIncorrectInputAlert{
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:incorrectValueTitle message:checkEmailAndPasswordMessage preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction* okAction = [UIAlertAction actionWithTitle:okActionTitle style:UIAlertActionStyleDefault handler:nil];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:kIncorrectValueTitle message:kCheckEmailAndPasswordMessage preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:kOkActionTitle style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:okAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
@@ -84,10 +84,10 @@ NSString *const connectionAlertMessage = @"Попробуйте повторит
 }
 
 - (IBAction)backButtonTapped:(id)sender {
-    [self performSegueWithIdentifier:fromRegistrationToStartSegueIS sender:self];
+    [self performSegueWithIdentifier:kFromRegistrationToStartSegueIS sender:self];
 }
 
 - (void)showTermsOfUse{
-    [self performSegueWithIdentifier:fromRegistrationToTermsSegueID sender:self];
+    [self performSegueWithIdentifier:kFromRegistrationToTermsSegueID sender:self];
 }
 @end

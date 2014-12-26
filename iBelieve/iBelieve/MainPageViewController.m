@@ -12,9 +12,9 @@
 
 @end
 
-@implementation MainPageViewController
+static NSString *const kFromMainToStartPageSegueID = @"FromMainToStartPage";
 
-NSString *const fromMainToStartPageSegueID = @"FromMainToStartPage";
+@implementation MainPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,6 +37,6 @@ NSString *const fromMainToStartPageSegueID = @"FromMainToStartPage";
 */
 
 - (IBAction)exitTapped:(id)sender {
-    [self performSegueWithIdentifier:fromMainToStartPageSegueID sender:self];
+    [self performSegueWithIdentifier:kFromMainToStartPageSegueID sender:self];
 }
 @end

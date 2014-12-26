@@ -12,9 +12,9 @@
 
 @end
 
-@implementation TermsOfUseViewController
+static NSString *const kFromTermsToRegistrationSegueID = @"FromTermsToRegistration";
 
-NSString *const fromTermsToRegistrationSegueID = @"FromTermsToRegistration";
+@implementation TermsOfUseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +41,6 @@ NSString *const fromTermsToRegistrationSegueID = @"FromTermsToRegistration";
 }
 
 - (void) goBackToRegistration{
-    [self performSegueWithIdentifier:fromTermsToRegistrationSegueID sender:self];
+    [self performSegueWithIdentifier:kFromTermsToRegistrationSegueID sender:self];
 }
 @end

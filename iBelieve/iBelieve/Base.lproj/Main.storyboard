@@ -642,6 +642,9 @@ Instagram, LLC ATTN: Arbitration Opt-out 1601 Willow Rd. Menlo Park, CA 94025
                                 <state key="normal" title="Восстановить">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="restoreWasTapped:" destination="Fhi-CR-Fy5" eventType="touchUpInside" id="oHz-Fs-XnO"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Электронная почта" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcT-Cw-0Tg">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -649,7 +652,7 @@ Instagram, LLC ATTN: Arbitration Opt-out 1601 Willow Rd. Menlo Park, CA 94025
                                     <constraint firstAttribute="width" constant="300" id="0bb-1w-MuG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="0bb-1w-MuG"/>

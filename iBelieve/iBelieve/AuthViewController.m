@@ -12,10 +12,10 @@
 
 @end
 
-@implementation AuthViewController
+static NSString *const kFromAuthToStartSegueID = @"FromAuthToStart";
+static NSString *const kFromAuthToRestoreSegueID = @"FromAuthToRestore";
 
-NSString *const fromAuthToStartSegueID = @"FromAuthToStart";
-NSString *const fromAuthToRestoreSegueID = @"FromAuthToRestore";
+@implementation AuthViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,10 +28,10 @@ NSString *const fromAuthToRestoreSegueID = @"FromAuthToRestore";
 }
 
 - (IBAction)backButtonTapped:(id)sender {
-    [self performSegueWithIdentifier:fromAuthToStartSegueID sender:self];
+    [self performSegueWithIdentifier:kFromAuthToStartSegueID sender:self];
 }
 
 - (IBAction)forgotPassTapped:(id)sender {
-    [self performSegueWithIdentifier:fromAuthToRestoreSegueID sender:self];
+    [self performSegueWithIdentifier:kFromAuthToRestoreSegueID sender:self];
 }
 @end

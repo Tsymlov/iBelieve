@@ -12,10 +12,10 @@
 
 @end
 
-@implementation StartPageViewController
+static NSString* const kFromStartPageToAuthSegueID = @"FromStartPageToAuth";
+static NSString* const kFromStartPageToRegistrationSegueID = @"FromStartPageToRegistration";
 
-NSString* const fromStartPageToAuthSegueID = @"FromStartPageToAuth";
-NSString* const fromStartPageToRegistrationSegueID = @"FromStartPageToRegistration";
+@implementation StartPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,10 +38,10 @@ NSString* const fromStartPageToRegistrationSegueID = @"FromStartPageToRegistrati
 */
 
 - (IBAction)enterTapped:(id)sender {
-    [self performSegueWithIdentifier:fromStartPageToAuthSegueID sender:self];
+    [self performSegueWithIdentifier:kFromStartPageToAuthSegueID sender:self];
 }
 
 - (IBAction)registrationTapped:(id)sender {
-    [self performSegueWithIdentifier:fromStartPageToRegistrationSegueID sender:self];
+    [self performSegueWithIdentifier:kFromStartPageToRegistrationSegueID sender:self];
 }
 @end

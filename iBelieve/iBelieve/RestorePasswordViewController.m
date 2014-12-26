@@ -12,31 +12,72 @@
 
 @end
 
-@implementation RestorePasswordViewController
+static NSString *const kFromRestoreToAuthSegueID = @"FromRestoreToAuth";
+static NSString *const kSuccessAlertTitle = @"Восстановление пароля";
+static NSString *const kSuccessAlertMessage = @"По указанному адресу отправлено письмо с информцией о пароле";
+static NSString *const kOkActionTitle = @"Ok";
 
-NSString *const fromRestoreToAuthSegueID = @"FromRestoreToAuth";
+@implementation RestorePasswordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)backTapped:(id)sender {
-    [self performSegueWithIdentifier:fromRestoreToAuthSegueID sender:self];
+    [self goToAuthPage];
 }
+
+- (IBAction)restoreWasTapped:(id)sender {
+    if (![self checkEmailField]) {
+        [self showIncorrectValueAlert];
+        return;
+    }
+    if (![self accountWithThisMailExist]){
+        [self showAccountIsNotExistAlert];
+    }
+    [self sendRestoreMail];
+    [self showSuccessAlert];
+}
+
+//TODO: Implement this.
+- (BOOL) checkEmailField{
+    return YES;
+}
+
+//TODO: Implement this.
+- (void) showIncorrectValueAlert{
+    
+}
+
+//TODO: Implement this.
+- (void) sendRestoreMail{
+    
+}
+
+//TODO: Implement this.
+- (void) showSuccessAlert{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:kSuccessAlertTitle message:kSuccessAlertMessage preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:kOkActionTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){[self goToAuthPage];}];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+//TODO: Implement this.
+- (BOOL) accountWithThisMailExist{
+    return YES;
+}
+
+//TODO: Implement this.
+- (void) showAccountIsNotExistAlert{
+    
+}
+
+- (void) goToAuthPage{
+    [self performSegueWithIdentifier:kFromRestoreToAuthSegueID sender:self];
+}
+
 @end
